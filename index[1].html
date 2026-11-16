@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21140f">
+<meta name="description" content="Barista Academy: learn coffee from beginner to professional with lessons, recipes, quizzes and offline study.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>Barista Academy</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Barista Academy home"><span class="brand-icon">☕</span><span>BARISTA <b>ACADEMY</b><small>LEARN • BREW • MASTER</small></span></a>
+  <button id="installBtn" class="install hidden">Install app</button>
+</header>
+<div class="shell">
+<aside class="sidebar">
+  <div class="side-label">LEARNING</div>
+  <button class="nav active" data-view="home">⌂ <span>Dashboard</span></button>
+  <button class="nav" data-view="lessons">▤ <span>All lessons</span></button>
+  <button class="nav" data-view="recipes">♨ <span>Coffee recipes</span></button>
+  <button class="nav" data-view="quiz">✓ <span>Knowledge quiz</span></button>
+  <button class="nav" data-view="glossary">Aa <span>Glossary</span></button>
+  <button class="nav" data-view="saved">☆ <span>Bookmarks</span></button>
+  <div class="offline-card"><span class="status-dot"></span><div><b id="networkStatus">Checking connection</b><small id="cacheStatus">Offline-ready after first load</small></div></div>
+  <p class="side-note">Your lessons are stored on this device after the first successful visit.</p>
+</aside>
+<main id="main" tabindex="-1"></main>
+</div>
+<footer>BARISTA ACADEMY <span>Independent learning resource • Keep practising</span></footer>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
